@@ -1,0 +1,117 @@
+/* Aplica a configuração padrão para remover margens e paddings dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Faz com que padding e border sejam incluídos na largura e altura do elemento */
+    font-family: 'Courier', 'Courier New'  ; /* Define a fonte  */
+}
+
+/* Estilo do corpo da página */
+body {
+    background-color: #1d1f27; /* Fundo escuro para visual moderno */
+    color: #e6e6e6; /* Texto claro para contraste com o fundo */
+    display: flex; /* Usado para centralizar o conteúdo da página */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura como 100% da viewport */
+    padding: 20px; /* Espaçamento ao redor do conteúdo */
+}
+
+/* Estilo do título principal */
+h1 {
+    color: #00adb5; /* Cor ciano para dar destaque ao título */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Container que envolve toda a aplicação */
+.container {
+    max-width: 800px; /* Limita a largura máxima do container */
+    width: 100%; /* Faz com que o container use 100% da largura disponível */
+    background-color: #282c34; /* Cor de fundo escura, mas diferente do body para criar contraste */
+    padding: 20px; /* Espaçamento interno do container */
+    border-radius: 10px; /* Bordas arredondadas para visual moderno */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Sombra para dar profundidade */
+}
+
+/* Estilo da barra de pesquisa, contendo o input e o botão */
+.search-bar {
+    display: flex; /* Alinha o input e o botão na horizontal */
+    justify-content: space-between; /* Distribui o espaço igualmente entre os elementos */
+    margin-bottom: 20px; /* Espaçamento abaixo da barra de pesquisa */
+}
+
+/* Estilo do campo de input */
+.search-bar input {
+    flex: 1; /* Faz com que o input ocupe todo o espaço disponível */
+    padding: 10px; /* Espaçamento interno para um campo mais confortável */
+    font-size: 16px; /* Tamanho da fonte do texto inserido no campo */
+    border: 2px solid #00adb5; /* Define a cor da borda */
+    border-radius: 5px; /* Bordas arredondadas no campo de pesquisa */
+    background-color: #2c2f3f; /* Cor de fundo do input */
+    color: #e6e6e6; /* Cor do texto no input */
+    margin-right: 10px; /* Espaçamento entre o input e o botão */
+    outline: none; /* Remove o contorno padrão ao focar no campo */
+    transition: border-color 0.3s ease; /* Transição suave ao alterar a cor da borda */
+}
+
+/* Altera a cor da borda quando o input estiver focado */
+.search-bar input:focus {
+    border-color: #00ffdd; /* Muda a cor da borda para ciano brilhante ao focar */
+}
+
+/* Estilo do botão de pesquisa */
+.search-bar button {
+    padding: 10px 20px; /* Espaçamento interno para um botão maior */
+    background-color: #00adb5; /* Cor de fundo ciano para destacar o botão */
+    color: #fff; /* Cor branca para o texto */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Bordas arredondadas no botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    cursor: pointer; /* Altera o cursor para indicar que é um botão clicável */
+    transition: background-color 0.3s ease; /* Transição suave ao alterar a cor de fundo */
+}
+
+/* Altera a cor do botão ao passar o mouse */
+.search-bar button:hover {
+    background-color: #00ffdd; /* Muda a cor do botão ao passar o mouse para um ciano mais claro */
+}
+
+/* Estilo da seção de resultados */
+.resultados {
+    display: flex; /* Exibe os resultados em blocos flexíveis */
+    flex-direction: column; /* Organiza os resultados em coluna (um abaixo do outro) */
+    gap: 15px; /* Espaçamento entre os blocos de resultado */
+}
+
+/* Estilo individual de cada bloco de resultado */
+.resultados div {
+    background-color: #393e46; /* Fundo mais escuro para contrastar com o container */
+    padding: 15px; /* Espaçamento interno do bloco */
+    border-radius: 10px; /* Bordas arredondadas para um visual moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra leve para dar profundidade aos blocos */
+}
+
+/* Estilo do título dentro de cada bloco */
+.resultados h3 {
+    margin-bottom: 5px; /* Espaçamento abaixo do título */
+    color: #00ffdd; /* Cor ciano brilhante para destacar os títulos */
+}
+
+/* Estilo do parágrafo de descrição em cada bloco */
+.resultados p {
+    margin-bottom: 10px; /* Espaçamento abaixo do texto */
+}
+
+/* Estilo do link para mais informações */
+.resultados a {
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    color: #00adb5; /* Cor ciano para o link */
+    font-weight: bold; /* Deixa o link em negrito para maior destaque */
+    transition: color 0.3s ease; /* Transição suave ao alterar a cor do link */
+}
+
+/* Altera a cor do link ao passar o mouse */
+.resultados a:hover {
+    color: #00ffdd; /* Muda a cor do link ao passar o mouse para um ciano mais claro */
+}
